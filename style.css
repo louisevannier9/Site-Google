@@ -12,51 +12,66 @@ header {
     height: 10%;
     border: solid;
     
-    .choix{
-        margin: auto;
-        width: 96%;
-        text-align:start;
-        display: flex;
+    .boxA{
+        display:flex;
+        justify-content:space-between;
+        border-color: blueviolet;
     }
+    
     .choixG{
         display: flex;
         justify-content: start;
+        border: dashed red;
     }
     .choixD{
         display: flex;
         justify-content: end;
+        border: dashed red;
     }
 }
+
+main .google{
+        width:250px;
+        border:solid;
+    }
+    .boxB{
+        border:solid;
+    }
+    .button{
+        border:solid;
+    }
+   
 
 
 footer {
     position: fixed;                     /*Fixer le footer au bas de page*/
     bottom: 0;
-    
     width: 100%;                         /*Prend toute la longueur de l'écran*/
     height: 7%;                          /*Avec une hauteur */
     padding: 30px;                       /*Espace entre le bord et le texte*/
     border: solid;                       /*Marquer les bordure*/
-    font-size: smaller;                  /*Réduire la taille de police*/
+    
      
 
    .acroche{
     display: flex;                        /*coller les enfant de la div a gauche*/
-    flex-direction: row;                  /*afficher en ligne*/
-    
+    justify-content: center;
+    border:dashed blue;
    } 
 
-   .box{
+   .boxC{
+    display: flex;
+    justify-content : space-between;
+    border:solid;
+   } 
 
-    .liensG{
-    flex-direction: row;                  /*afficher en ligne*/
-    justify-content: start;               
+   .liensG{
+    border:solid;
    }
-    
+
    .liensD{
-    flex-direction: row;
-    justify-content: end;               
+    border:solid;
+
    }
 
-   } 
 }
