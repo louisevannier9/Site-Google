@@ -3,12 +3,6 @@ body {
     font-family: arial;
     background-color: white;
 
-    .p{
-
-    }
-
-     
-     
 }
 
 header {
@@ -16,32 +10,53 @@ header {
     top:0%;
     width: 100%;
     height: 10%;
+    border: solid;
     
     .choix{
         margin: auto;
         width: 96%;
         text-align:start;
+        display: flex;
     }
-
+    .choixG{
+        display: flex;
+        justify-content: start;
+    }
+    .choixD{
+        display: flex;
+        justify-content: end;
+    }
 }
 
-main {
-
-}
 
 footer {
     position: fixed;                     /*Fixer le footer au bas de page*/
-    left:0;                              /*Colle a gauche*/
-    bottom:0;                            /*Colle en bas*/
+    bottom: 0;
+    
     width: 100%;                         /*Prend toute la longueur de l'écran*/
-    height: 7%;                       /*Avec une hauteur */
+    height: 7%;                          /*Avec une hauteur */
     padding: 30px;                       /*Espace entre le bord et le texte*/
-    border: solid;                  
+    border: solid;                       /*Marquer les bordure*/
+    font-size: smaller;                  /*Réduire la taille de police*/
      
 
    .acroche{
-    font-size: smaller;
-    top:0%;
+    display: flex;                        /*coller les enfant de la div a gauche*/
+    flex-direction: row;                  /*afficher en ligne*/
+    
    } 
 
+   .box{
+
+    .liensG{
+    flex-direction: row;                  /*afficher en ligne*/
+    justify-content: start;               
+   }
+    
+   .liensD{
+    flex-direction: row;
+    justify-content: end;               
+   }
+
+   } 
 }
