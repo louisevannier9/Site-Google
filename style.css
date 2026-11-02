@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: arial;
+    background-color: white;
+
+    .p{
+
+    }
+
+     
+     
+}
+
+header {
+    position:static;
+    top:0%;
+    width: 100%;
+    height: 10%;
+    
+    .choix{
+        margin: auto;
+        width: 96%;
+        text-align:start;
+    }
+
+}
+
+main {
+
+}
+
+footer {
+    position: fixed;                     /*Fixer le footer au bas de page*/
+    left:0;                              /*Colle a gauche*/
+    bottom:0;                            /*Colle en bas*/
+    width: 100%;                         /*Prend toute la longueur de l'écran*/
+    height: 7%;                       /*Avec une hauteur */
+    padding: 30px;                       /*Espace entre le bord et le texte*/
+    border: solid;                  
+     
+
+   .acroche{
+    font-size: smaller;
+    top:0%;
+   } 
+
+}
