@@ -2,15 +2,17 @@ body {
     margin: 0;
     font-family: arial;
     background-color: white;
+    font-size: 14px;
+    color:#16171a
 
 }
 
 header {
     position:static;
     top:0%;
-    width: 100%;
+    
     height: 10%;
-    border: solid;
+    padding: 10px 20px 10px;
     
     .boxA{
         display:flex;
@@ -27,50 +29,85 @@ header {
         display: flex;
         justify-content: end;
         border: dashed red;
+        font-size: 13px;
     }
 }
 
-main .google{
-        width:250px;
-        border:solid;
+main .boxB{
+        border: solid;
+        height: 520px;
+        flex-direction: row;
     }
-    .boxB{
-        border:solid;
+    .centre{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
+
+    .google{
+        width:320px;
+        display:grid;
+    }
+    .recherche{
+        border-radius: 26px;                       /*Arrondir les bords*/
+        min-height: 50px;
+        box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
+        border: 1px solid #dadce0;
+        box-sizing:border-box;
+        width: 450px;
+    }
+
     .button{
-        border:solid;
+        display:flex;
+        justify-content: space-between;
+        padding: 1em;
     }
-   
+
+    .Recherchebutton{
+        width:200px;
+        margin: 0 4px;
+    }
+    .Chance{
+        width:200px;
+        margin: 0 4px;
+    }
 
 
 footer {
     position: fixed;                     /*Fixer le footer au bas de page*/
     bottom: 0;
-    width: 100%;                         /*Prend toute la longueur de l'écran*/
-    height: 7%;                          /*Avec une hauteur */
+    width: 100%;                       /*Prend toute la longueur de l'écran*/
+    height: 50px;                          /*Avec une hauteur */
     padding: 30px;                       /*Espace entre le bord et le texte*/
-    border: solid;                       /*Marquer les bordure*/
+    border: solid;                       /*Marquer les bord*/
     
-     
+    
+    .BoxC{
+        width: 100%;
+    }
 
    .acroche{
     display: flex;                        /*coller les enfant de la div a gauche*/
     justify-content: center;
-    border:dashed blue;
+    border:dashed blue;                 /*Marquer les bord en bleu*/
+
    } 
 
-   .boxC{
+   .liens{
     display: flex;
-    justify-content : space-between;
-    border:solid;
+    justify-content : space-between;      
+    border:solid;                          /*Marquer les bord*/
+
    } 
 
    .liensG{
-    border:solid;
+    border:solid;                         /*Marquer les bord*/
+    
    }
 
    .liensD{
-    border:solid;
+    border:solid;                        /*Marquer les bord*/
 
    }
 
