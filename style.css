@@ -3,39 +3,51 @@ body {
     font-family: arial;
     background-color: white;
     font-size: 14px;
-    color:#16171a
-
 }
-
+a{
+ color:#16171a;
+ text-decoration: none;
+}
 header {
     position:static;
     top:0%;
     
     height: 10%;
-    padding: 10px 20px 10px;
+    color:#16171a;
     
     .boxA{
         display:flex;
         justify-content:space-between;
-        border-color: blueviolet;
+        padding: 6px;
     }
-    
-    .choixG{
+
+
+    .choixg{
         display: flex;
-        justify-content: start;
-        border: dashed red;
+        justify-content: space-between;
+        margin:0 4px;
+        padding: 1em;
+        gap: 20px;
     }
+
     .choixD{
         display: flex;
-        justify-content: end;
-        border: dashed red;
-        font-size: 13px;
+    }
+
+    .choixliensd{
+        display: flex;
+        margin:0 4px;
+        padding: 1em;
+        gap: 20px;
+    }
+    .svg-point{
+        height: 20px;
     }
 }
 
 main .boxB{
         border: solid;
-        height: 520px;
+        flex-grow: 1;
         flex-direction: row;
     }
     .centre{
@@ -45,17 +57,24 @@ main .boxB{
         flex-direction: column;
     }
 
-    .google{
+    svg{
         width:320px;
         display:grid;
+        object-position: bottom;
+    } 
+
+    #path1{
+        color: #3186ff;
+
     }
+
     .recherche{
         border-radius: 26px;                       /*Arrondir les bords*/
         min-height: 50px;
         box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
         border: 1px solid #dadce0;
         box-sizing:border-box;
-        width: 450px;
+        width: 48%;
     }
 
     .button{
@@ -77,8 +96,7 @@ main .boxB{
 footer {
     position: fixed;                     /*Fixer le footer au bas de page*/
     bottom: 0;
-    width: 100%;                       /*Prend toute la longueur de l'écran*/
-    height: 50px;                          /*Avec une hauteur */
+    width: 100%;                       /*Prend toute la longueur de l'écran*                          /*Avec une hauteur */
     padding: 30px;                       /*Espace entre le bord et le texte*/
     border: solid;                       /*Marquer les bord*/
     
