@@ -51,6 +51,9 @@ header {
             width: 28px;
         }        
     }
+    .first-name-initial{
+        border-radius: 50%;
+    }
 }
 
 main .center-box{
@@ -69,14 +72,21 @@ main .center-box{
         display:grid;
         object-position: bottom;
     } 
-
-    .search-bar{
-        border-radius: 26px;                                       /*Arrondir les bords*/
-        min-height: 50px;                                          /*hauteur de la bar*/
+    
+    .bar-container{
+        display: flex;
+        justify-content: center;
+        border-radius: 26px;                                      /*Arrondir les bords*/
+        min-height: 50px;
         box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);     /*ombrage*/
-        border: 1px solid #dadce0;                               
-        box-sizing:border-box;
+        border: 1px solid #dadce0;
         width: 48%;
+
+        .search-bar{
+            width: 80%;
+            border-color: #ffffff;
+            border: 1px solid #ffffff;
+        }
     }
 
     .button{
