@@ -15,14 +15,14 @@ header {
     height: 10%;
     color:#16171a;
     
-    .boxA{
+    .top-box{
         display:flex;
         justify-content:space-between;
         padding: 6px;
     }
 
 
-    .choixg{
+    .top-left{
         display: flex;
         justify-content: space-between;
         margin:0 4px;
@@ -30,49 +30,51 @@ header {
         gap: 20px;
     }
 
-    .choixD{
+    .top-right{
         display: flex;
     }
 
-    .choixliensd{
+    .container-right{
         display: flex;
+        align-items: center;
         margin:0 4px;
         padding: 1em;
         gap: 20px;
     }
     .svg-point{
-        height: 20px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        svg {
+            height: 28px;
+            width: 28px;
+        }        
     }
 }
 
-main .boxB{
-        border: solid;
+main .center-box{
         flex-grow: 1;
         flex-direction: row;
     }
-    .centre{
+    .container-center{
         display:flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    svg{
+    svg-google{
         width:320px;
         display:grid;
         object-position: bottom;
     } 
 
-    #path1{
-        color: #3186ff;
-
-    }
-
-    .recherche{
-        border-radius: 26px;                       /*Arrondir les bords*/
-        min-height: 50px;
-        box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
-        border: 1px solid #dadce0;
+    .search-bar{
+        border-radius: 26px;                                       /*Arrondir les bords*/
+        min-height: 50px;                                          /*hauteur de la bar*/
+        box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);     /*ombrage*/
+        border: 1px solid #dadce0;                               
         box-sizing:border-box;
         width: 48%;
     }
@@ -83,50 +85,81 @@ main .boxB{
         padding: 1em;
     }
 
-    .Recherchebutton{
-        width:200px;
+    .search-button{
+        width:150px;
         margin: 0 4px;
+        border-radius: 10px;
+        min-height: 40px;
+        background-color: #F8F9FA;
+        border: 1px solid #F8F9FA;
     }
-    .Chance{
-        width:200px;
+    .luck-button{
+        width:150px;
         margin: 0 4px;
+        border-radius: 10px;
+        min-height: 40px;
+        background-color: #F8F9FA;
+        border: 1px solid #F8F9FA;
     }
+
+    
 
 
 footer {
     position: fixed;                     /*Fixer le footer au bas de page*/
     bottom: 0;
     width: 100%;                       /*Prend toute la longueur de l'écran*                          /*Avec une hauteur */
-    padding: 30px;                       /*Espace entre le bord et le texte*/
-    border: solid;                       /*Marquer les bord*/
+                          /*Espace entre le bord et le texte*/
     
     
-    .BoxC{
+    .france{
+     display: flex;
+     padding: 15px 30px;
+     border-bottom: 1px solid #d2d2d2;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     font-size: 15px;
+
+    }
+    
+    .sheet{
+        height: 14px;
+    }
+    .bottom-box{
         width: 100%;
+        justify-content: left;
+        height:min-content;
+        
     }
 
-   .acroche{
+   .tag-line{
     display: flex;                        /*coller les enfant de la div a gauche*/
     justify-content: center;
-    border:dashed blue;                 /*Marquer les bord en bleu*/
+    
 
    } 
 
-   .liens{
+   .bottom-link-box{
+    width: 100%;
     display: flex;
     justify-content : space-between;      
-    border:solid;                          /*Marquer les bord*/
-
+    
    } 
 
-   .liensG{
-    border:solid;                         /*Marquer les bord*/
-    
+   .link-left-box{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 4px;
+    padding: 1em;
+    gap: 20px;
    }
 
-   .liensD{
-    border:solid;                        /*Marquer les bord*/
-
+   .link-right-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4px;
+    padding: 1em;
+    gap: 20px;
    }
 
 }
